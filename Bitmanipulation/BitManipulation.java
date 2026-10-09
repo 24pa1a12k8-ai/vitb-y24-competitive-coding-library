@@ -18,4 +18,12 @@ class BitManipulation {
         return n;
 
     }
+    public static long countSetBits(long n){
+        int count=0;
+    
+            n=(n&(n-1));
+            count++;
+        
+        return count;
+    }
 }
